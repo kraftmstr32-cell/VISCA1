@@ -1,27 +1,284 @@
-#cake {
-  display: block;
-  position: relative;
-  margin: -10em auto 0 auto;
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:linear-gradient(#200016,#10001f);
+    height: 100vh;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+
+    text-decoration: none;
+    color:rgb(246, 242, 237)
+}
+header{
+    position: fixed;
+    width: 95%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+align-items: center;
+margin: 30px;
+
+}
+header .logo{
+font-size:30px ;
+text-transform:uppercase ;
+
+}
+header ul{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    list-style: none;
+}
+header ul li{
+
+    margin-right: 30px;
+}
+header ul li a{
+    padding: 6px 15px ;
+    border-radius: 20px;
+}
+header ul li a:hover, .active{
+background:#210737;
+color: rgb(123, 120, 181);
+
+}
+.main{
+position: relative;
+height: 100vh;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+main::after{
+    content: ;
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width:100% ;
+    background: linear-gradient(to top #10001f,transparent )
+}
+.main img{
+position: absolute;
+width: 100%;
+height:100vh;
+object-fit:cover ;
+}
+#moon{
+    mix-blend-mode:screen ;
+    transform: translateY(100px);
+}
+.VISCA{
+    color: #f6ecf3;
+    font-size: 20PX;
+    text-transform: uppercase;
+    transform: translateY(-100px);
+
+}
+.content{
+color:#fdf6fb ;
+padding: 30px; ;
+}
+.content h2{
+    margin: 20px;
+    font-size: 40px;
+}
+.contant p{
+margin: 20px;
+
+}
+.content {
+    text-align: center;
+    color: #fff;
+    padding-top: 150px; /* أو تظبط المارجن حسب ما تحب */
 }
 
-.candle {
+.content h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.content .btn {
+    text-decoration: none;
+    background: #fff;
+    color: #2b1055;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.content .btn:hover {
+    background: #2b1055;
+    color: #fff;
+}
+.details-section {
+    padding: 60px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.details-section h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.section-desc {
+    color: #aaa;
+    margin-bottom: 40px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 12px;
+    width: 280px;
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s, background 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.card p {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.6;
+}
+.profile-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    padding: 30px;
+    max-width: 350px;
+    margin: 40px auto;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.profile-info h2 {
+    color: #fff;
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.profile-info .badge {
+    display: inline-block;
+    background: #2b1055;
+    color: #fff;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile-info .phone {
+    color: #ddd;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    /* يمنع أي مساحة فاضية زيادة تحت */
+    margin: 0;
+    padding: 0;
+}
+.insta-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.insta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(220, 39, 67, 0.4);
+}
+.card {
+  padding: 20px;
+  border-radius: 12px;
   background: #ffffff;
-  border-radius: 10px;
-  position: absolute;
-  top: 220px;
-  left: 50%;
-  margin-left: -2.4px;
-  margin-top: -0.33333px;
-  width: 5px;
-  height: 35px;
-  transform: translateY(-300px);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-animation: in 500ms 6s ease-out forwards;
-  animation: in 500ms 6s ease-out forwards;
+  border: 1px solid #e2e8f0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.candle:after {
-  top: 25%;
-  left: 0;
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+.btn-primary {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.1s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}
+.styled-box {
+  max-width: 400px; /* عرض المربع */
+  padding: 24px; /* مسافة داخلية بين النص والحدود */
+  margin: 20px auto; /* توسيط المربع في منتصف الصفحة */
+  background: #ffffff; /* لون الخلفية */
+  border-radius: 16px; /* انحناء الزوايا */
+  border: 1px solid #e2e8f0; /* إطار ناعم */
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08); /* ظل ناعم لخروج المربع عن الخلفية */
+  border-right: 5px solid #6366f1; /* شريط ملون جانبي لإضافة لمسة جمالية */
+}
+
+.styled-box h2 {
+  margin-top: 0;
+  color: #1e293b;
+  font-size: 1.25rem;
+}
+
+.styled-box p {
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 0;
 }
