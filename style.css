@@ -43,7 +43,7 @@ header ul li a{
 }
 header ul li a:hover, .active{
 background:#0c120e;
-color: rgb(105, 179, 96);
+color: rgb(219, 227, 217);
 
 }
 .main{
@@ -60,7 +60,7 @@ main::after{
     bottom: 0;
     height: 100px;
     width:100% ;
-    background: linear-gradient(to top #388472,transparent )
+    background: linear-gradient(to top #b3bdbb,transparent )
 }
 .main img{
 position: absolute;
@@ -73,7 +73,7 @@ object-fit:cover ;
     transform: translateY(100px);
 }
 .VISCA{
-    color: #4ca671;
+    color: #ecf3ef;
     font-size: 20PX;
     text-transform: uppercase;
     transform: translateY(-100px);
@@ -279,11 +279,6 @@ body {
   border-right: 5px solid #676882; /* شريط ملون جانبي لإضافة لمسة جمالية */
 }
 
-.styled-box h2 {
-  margin-top: 0
-  color: #438d88;
-  font-size: 1.25rem;
-}
 
 .styled-box p {
   color: #3b8072;
